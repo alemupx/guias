@@ -45,3 +45,5 @@ MERGE // FUSIÓN
 ###################
 WORKFLOW // FLUJO DE TRABAJO
 ###################
+
+    Es el uso de las distintas ramas creadas en el repositorio remoto para trabajar conjuntamente con varios desarrolladores. 
