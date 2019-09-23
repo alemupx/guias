@@ -25,18 +25,22 @@ BRANCHES // RAMAS
     Manera de crear una rama remota: 
         $ git checkout -b <NombreDeLaRama>
 
+    Publicar rama que no este remotamente: 
+        $ git push --set-upstream origin luis
+
 ###################
 FETCH // BUSCAR
 ###################
 
-    $ git fetch --all --prune // Comando para buscar las ramas remotas mas actualizadas
+    Comando para buscar las ramas remotas actualizadas:
+        $ git fetch --all --prune 
 
 ###################
 MERGE // FUSIÓN
 ###################
 
-    Una vez posicionado en la rama a la cual se le desea hacer la fusión. 
-    $ git merge <NombreDeLaRama
+    Una vez posicionado en la rama a la cual se le desea hacer la fusión:
+        $ git merge <NombreDeLaRama
 
 ###################
 WORKFLOW // FLUJO DE TRABAJO
