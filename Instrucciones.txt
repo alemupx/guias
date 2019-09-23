@@ -1,0 +1,43 @@
+###################
+CLON // CLONAR
+###################
+    
+    Para traer el repositorio remoto a nivel local: 
+        $ git clone <url reporsitorio>
+
+###################
+COMMIT // CAMBIAR
+###################
+
+    Añadir los archivos con los cambios hechos:
+        $ git add -A // Almacenar todo los cambios hechos.
+
+    Pre publicar los archivos con un comentario detallado de los cambios hechos.  
+        $ git commit -a -m <Mensaje> 
+    
+    Publicar cambios hechos. 
+        $ git push // Subir los cambios confirmados al repositorio remoto. 
+
+###################
+BRANCHES // RAMAS
+###################
+
+    Manera de crear una rama remota: 
+        $ git checkout -b <NombreDeLaRama>
+
+###################
+FETCH // BUSCAR
+###################
+
+    $ git fetch --all --prune // Comando para buscar las ramas remotas mas actualizadas
+
+###################
+MERGE // FUSIÓN
+###################
+
+    Una vez posicionado en la rama a la cual se le desea hacer la fusión. 
+    $ git merge <NombreDeLaRama
+
+###################
+WORKFLOW // FLUJO DE TRABAJO
+###################
