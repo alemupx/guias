@@ -10,6 +10,12 @@ CONFIGURACIONES USUARIO
         $ git config --global --unset-all <user.name>
 
 ###################
+CONFIGURACIONES URLS
+###################
+    Cambiar la ruta url de un repositorio.
+       $ git remote set-url origin <url>
+       
+###################
 CLON // CLONAR
 ###################
     
