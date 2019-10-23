@@ -3,9 +3,9 @@ CONFIGURACIONES USUARIO
 ###################
 
     Configurar nombre de usuario y correo electronico.
-        $ git config --global --user.name <usuario>
-        $ git config --global --user.user <usuario>
-        $ git config --global --user.email <e-mail>
+        $ git config --global user.name <usuario>
+        $ git config --global user.user <usuario>
+        $ git config --global user.email <e-mail>
     Función para eliminar la propiedad que se le exija. 
         $ git config --global --unset-all <user.name>
 
