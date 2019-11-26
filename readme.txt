@@ -1,24 +1,25 @@
+#########################################
+¿Cómo poner a funcionar este repositorio?
+#########################################
+
+Una vez lo hayas clonado en la carpeta htdocs  oprimes el boton "Importar" en phpMyAdmin y seleccionas el archivo test.sql (El cual esta alojado en la carpeta database).
+
 ###################
 CONFIGURACIONES USUARIO
 ###################
 
-    Configurar nombre de usuario y correo electronico.
+    Configurar nombre 
         $ git config --global user.name <usuario>
+	
+    Configurar el usuario
         $ git config --global user.user <usuario>
+	
+    Configurar correo electronico
         $ git config --global user.email <e-mail>
+	
     Función para eliminar la propiedad que se le exija. 
         $ git config --global --unset-all <user.name>
 
-###################
-URLS
-###################
-
-    Obtener ruta url del repositorio
-       $ git config --get remote.origin.url     
-       
-    Cambiar la ruta url de un repositorio.
-       $ git remote set-url origin <url>
-       
 ###################
 CLON // CLONAR
 ###################
@@ -27,7 +28,7 @@ CLON // CLONAR
         $ git clone <url reporsitorio>
 
 ###################
-COMMIT // CAMBIAR
+COMMIT // AÑADIR ARCHIVOS AL REPOSITORIO EN GITHUB
 ###################
 
     Añadir los archivos con los cambios hechos:
@@ -42,12 +43,15 @@ COMMIT // CAMBIAR
 ###################
 BRANCHES // RAMAS
 ###################
-
+		
+    ¿Comó saber cuantas ramas tiene el repositorio?
+	$ git branch --all
+		
     Manera de crear una rama remota: 
         $ git checkout -b <NombreDeLaRama>
 
     Publicar rama que no este remotamente: 
-        $ git push --set-upstream origin luis
+        $ git push --set-upstream origin <NombreRamaLocal>
 
 ###################
 FETCH // BUSCAR
@@ -61,10 +65,17 @@ MERGE // FUSIÓN
 ###################
 
     Una vez posicionado en la rama a la cual se le desea hacer la fusión:
-        $ git merge <NombreDeLaRama
+        $ git merge <NombreDeLaRamaEnLaCualSeVaAFusionarEsta>
 
 ###################
-WORKFLOW // FLUJO DE TRABAJO
+URLS
 ###################
 
-    Es el uso de las distintas ramas creadas en el repositorio remoto para trabajar conjuntamente con varios desarrolladores. 
+    Obtener ruta url del repositorio
+       $ git config --get remote.origin.url     
+       
+    Cambiar la ruta url de un repositorio.
+       $ git remote set-url origin <url>
+       
+
+
