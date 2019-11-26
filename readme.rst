@@ -1,8 +1,6 @@
 #########################################
-¿Cómo poner a funcionar este repositorio?
+GIT
 #########################################
-
-Una vez lo hayas clonado en la carpeta htdocs  oprimes el boton "Importar" en phpMyAdmin y seleccionas el archivo test.sql (El cual esta alojado en la carpeta database).
 
 ###################
 CONFIGURACIONES USUARIO
@@ -77,5 +75,3 @@ URLS
     Cambiar la ruta url de un repositorio.
        $ git remote set-url origin <url>
        
-
-
