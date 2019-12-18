@@ -50,6 +50,9 @@ BRANCHES // RAMAS
 
     Publicar rama que no este remotamente: 
         $ git push --set-upstream origin <NombreRamaLocal>
+	
+    Renombrar rama: 
+    	$ git branch -m <NombreRamaLocal> <NuevoNombre>
 
 ###################
 FETCH // BUSCAR
