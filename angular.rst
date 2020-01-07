@@ -43,6 +43,10 @@ Firebase Deploy
   
   ng build --prod
   
+  Subimos el versión producida por Angular 
+  
+  firebase deploy
+  
   
   
   
