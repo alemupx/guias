@@ -52,7 +52,15 @@ BRANCHES // RAMAS
         $ git push --set-upstream origin <NombreRamaLocal>
 	
     Renombrar rama: 
-    	$ git branch -m <NombreRamaLocal> <NuevoNombre>
+    	$ git branch -m <NombreRamaLocal> <NuevoNombre>	
+    
+    Eliminar rama:
+	$ git branch -D <NombreDeLaRama>
+    	
+    Refrescar luego de haber eliminado la rama (El espacio despues de origin es IMPORTANTISIMO): 
+    	$ git push origin :<NombreDeLaRama>
+	
+
 
 ###################
 FETCH // BUSCAR
