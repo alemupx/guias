@@ -45,6 +45,10 @@ En esta etapa se busca la necesidad del usuario y la forma en que se va a presen
   Actividades:
 
     1.1. Identificar Casos de Uso del sistema
+        
+        -Qué es un caso de uso?
+        Es una serie de acciónes que realiza el sistema con un resultado observable y de valor para los actores en este. 
+        Y para ser más claros podemos decir que los casos de uso son la manera en como un sistema interactua con sus usurios. 
 
     1.2. Dar detalle a los casos de uso descritos
 
@@ -92,3 +96,5 @@ En esta etapa se adecuará el análisis a las características específicas del 
 Basado en...
 #########################################
 - https://www.monografias.com/trabajos28/proyecto-uml/proyecto-uml.shtml#desc
+- https://es.calameo.com/read/002762747caf3fd351efe
+- https://www.codecompiling.net/files/slides/UML_clase_02_UML_casos_de_uso.pdf
