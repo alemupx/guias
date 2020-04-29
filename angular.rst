@@ -17,9 +17,15 @@ Herramientas del Angular Cli.
 #########################################
   
   Crear componente:
-    ng g c <carpetaComponente>/<nombre componente>
+    ng g c <carpetaComponentes>/<MmbreComponente>
   
-  Crear servicio 
+  Crear servicio: 
+    ng g s <carpetaServicios>/<nombreServicio>
+    
+
+#########################################
+Instalar Angular Material
+#########################################  
   
 #########################################
 Instalar bootstrap
@@ -29,23 +35,97 @@ Instalar bootstrap
     npm i bootstrap jquery popper.js ngx-spinner -s
   
 
+
+
+#########################################
+Firebase x Angular
+#########################################  
+
+
+
+#1. Primero instalamos todos los archivos de firebase necesarios en la aplicación.
+
+
+  npm install firebase @angular/fire
+
+#2. Incluir en la variable de entorno las configuraciones de firabase. (src/enviroments/enviroment.ts)
+
+
+  Dicho archivo debería quedar algo parecido a esto:  
+
+
+  export const environment = {
+    production: false,
+    firebaseConfig : {
+      apiKey: "null",
+      authDomain: "",
+      databaseURL: "",
+      projectId: "",
+      storageBucket: "",
+      messagingSenderId: "",
+      appId: "",
+      measurementId: ""
+    }
+  };
+
+
+  https://firebase.google.com/docs/web/setup?authuser=0#desde-las-url-de-hosting
+
+
+#3. Importamos los modulos de firebase y la variable de entorno. (src/app/app.module.ts)
+
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from '../environments/environment';
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    LoginComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireAuthModule,
+  ],
+  providers: [],  
+  bootstrap: [AppComponent]
+})
+
+
 #########################################
 Firebase Deploy
 #########################################
 
-  Ejecutamos Firebase:
+
+  #1.Ejecutamos Firebase
+  
   
   firebase init
   
-  Luego de haber seleccionado las funciones que deseamos, nos preguntará acerca de donde deberia buscar los archivos de producción y le dire que en el carpeta dist. 
-  Habiendo acabado las configuraciones y validaciones nos habrá creado una carpeta dist y en ella un archivo que por default crea el gestor de configuraciones el cual deberemos eliminar para alojar la versión de produción. 
+  
+  #2.Firebase nos preguntará con que funciones deseamos trabajar y nos preguntará acerca de donde deberia buscar los archivos de producción y le dire que en el carpeta dist.
   
   
-  Ejecutamos el gestor de la versión de producción con el siguiente comando: 
+  #3.Habiendo acabado las configuraciones y validaciones nos habrá creado una carpeta dist y en ella un archivo que por default el cual deberemos eliminar para alojar la versión de produción. 
+  
+  
+  #4. Ejecutamos el creador de versiones de producción con el siguiente comando: 
+  
   
   ng build --prod
   
-  Subimos el versión producida por Angular 
+  
+  #5. Subimos el versión de producción generada. 
+  
   
   firebase deploy
   
