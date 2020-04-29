@@ -2,7 +2,7 @@
 Crear proyecto
 #########################################
 
-  ng new <nombre del proyecto>    
+  #1. ng new <nombre del proyecto>    
   
   (Sí el proyecto es clonado usar: npm install para reconstruir el node modules)
 
@@ -10,11 +10,15 @@ Crear proyecto
 Iniciar proyecto
 #########################################
 
+
   npm start
+  
+  
   
 #########################################
 Herramientas del Angular Cli.
 #########################################
+  
   
   Crear componente:
     ng g c <carpetaComponentes>/<MmbreComponente>
@@ -22,10 +26,20 @@ Herramientas del Angular Cli.
   Crear servicio: 
     ng g s <carpetaServicios>/<nombreServicio>
     
+    
 
 #########################################
 Instalar Angular Material
 #########################################  
+  
+  
+  #1. Primero importamos todos los archivos de AngularMaterial necesarios en la aplicación.
+
+    ng add @angular/material
+    
+  #2. Luego te harán una serie de preguntas a las cuales generalmente deberas responder que si. 
+  
+  
   
 #########################################
 Instalar bootstrap
@@ -36,20 +50,17 @@ Instalar bootstrap
   
 
 
-
 #########################################
 Firebase x Angular
 #########################################  
 
 
-
 #1. Primero instalamos todos los archivos de firebase necesarios en la aplicación.
-
 
   npm install firebase @angular/fire
 
-#2. Incluir en la variable de entorno las configuraciones de firabase. (src/enviroments/enviroment.ts)
 
+#2. Incluir en la variable de entorno las configuraciones de firabase. (src/enviroments/enviroment.ts)
 
   Dicho archivo debería quedar algo parecido a esto:  
 
@@ -70,6 +81,7 @@ Firebase x Angular
 
 
   https://firebase.google.com/docs/web/setup?authuser=0#desde-las-url-de-hosting
+
 
 
 #3. Importamos los modulos de firebase y la variable de entorno. (src/app/app.module.ts)
@@ -101,14 +113,14 @@ import { environment } from '../environments/environment';
 })
 
 
+
 #########################################
 Firebase Deploy
 #########################################
 
 
   #1.Ejecutamos Firebase
-  
-  
+    
   firebase init
   
   
@@ -120,12 +132,10 @@ Firebase Deploy
   
   #4. Ejecutamos el creador de versiones de producción con el siguiente comando: 
   
-  
   ng build --prod
   
   
   #5. Subimos el versión de producción generada. 
-  
   
   firebase deploy
   
