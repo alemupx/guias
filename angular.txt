@@ -4,7 +4,14 @@ Crear proyecto
 
   #1. ng new <nombre del proyecto>    
   
-  (Sí el proyecto es clonado usar: npm install para reconstruir el node modules)
+  #1.1 Sí se clonó el proyecto y las versiones de angular estan desactualizadas. 
+  
+    ng --version
+    
+    npm install --save-dev @angular/cli@latest
+    
+    ng --version
+
 
 #########################################
 Iniciar proyecto
@@ -12,7 +19,6 @@ Iniciar proyecto
 
 
   npm start
-  
   
   
 #########################################
