@@ -20,7 +20,22 @@ but Angular version 8.2.14 was found instead.)
     ng update @angular/cli @angular/core --allow-dirty --force
     
     ng --version
-
+    
+    
+#########################################
+Crear proyecto Ubuntu
+#########################################
+  
+  #1. Tener el NodeJS instalado. 
+  https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/
+  
+  
+  #2. Tener el Angular instalado.
+  https://ubunlog.com/angular-instala-framework-ubuntu/
+  
+  
+  #3. Crear aplicación
+  https://github.com/angular/angular-cli/issues/17198
 
 #########################################
 Iniciar proyecto
