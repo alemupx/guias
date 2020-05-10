@@ -44,6 +44,8 @@ Iniciar proyecto
 
   npm start
   
+  npm install (Esta linea descarga todas las dependencias con las que se construyeron la aplicación)
+  
   
 #########################################
 Herramientas del Angular Cli.
