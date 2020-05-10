@@ -52,6 +52,9 @@ BRANCHES // RAMAS
     Manera de crear una rama remota: 
         git checkout -b <NombreDeLaRama>
 
+    Manera de cambiar entre ramas: 
+    	git checkout <NombreDeLaRama>
+
     Publicar rama que no este remotamente: 
         git push --set-upstream origin <NombreRamaLocal>
 	
