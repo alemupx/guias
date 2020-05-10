@@ -37,7 +37,7 @@ COMMIT // AÑADIR ARCHIVOS AL REPOSITORIO EN GITHUB
         git add -A // Almacenar todo los cambios hechos.
 
     Pre publicar los archivos con un comentario detallado de los cambios hechos.  
-        git commit -a -m <Mensaje> 
+        git commit -a -m "<Mensaje>" (IMPORTANTE!!! El mensaje va encerrado entre comillas)
     
     Publicar cambios hechos. 
         git push // Subir los cambios confirmados al repositorio remoto. 
