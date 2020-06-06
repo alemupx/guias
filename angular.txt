@@ -166,6 +166,8 @@ Firebase Deploy
   
   ng build --prod
   
+  ng build --prod --build-optimizer
+  
   
   #5. Subimos el versión de producción generada. 
   
