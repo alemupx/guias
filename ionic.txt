@@ -1,0 +1,36 @@
+##########################################################################
+
+GENERAR APK & BUILD
+
+##########################################################################
+
+
+#1. Crear aplicación y aplicar configuraciones.
+
+ionic start "nombreApp"
+
+
+#2 Lanzar aplicación (Utilizar comando estando dentro de la carpeta de la
+app).
+
+ionic serve
+
+
+##########################################################################
+
+GENERAR APK & BUILD
+
+##########################################################################
+
+
+#1 Generar el build de la aplicación, dejando la carpeta www
+
+ionic build
+
+#2 Instala las dependencias necesarias para ser una aplicación en Android.
+
+npx cap add android
+
+#3 Abre la aplicación en Android estudio.
+
+npx cap open android
