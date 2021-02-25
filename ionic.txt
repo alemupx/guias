@@ -18,7 +18,7 @@ ionic serve
 
 ##########################################################################
 
-GENERAR APK & BUILD
+GENERAR APK & BUILD ANDROID
 
 ##########################################################################
 
@@ -34,3 +34,63 @@ npx cap add android
 #3 Abre la aplicación en Android estudio.
 
 npx cap open android
+
+
+
+##########################################################################
+
+GENERAR BUILD Y SUBIRLA A GIT PAGES
+
+##########################################################################
+
+
+#1 Tener instalado
+
+npm i angular-cli-ghpages --save
+
+#2 Generar build con la url del proyecto
+
+ionic build --prod -- --base-href <url>
+
+#3 este comando se encarga de crear una rama en donde estaran los archivos necesarios para que Git Pages despliegue la pag.
+
+npx angular-cli-ghpages --dir=www
+
+#4 Configurar en Git Pages que la rama creada sea la rama en la cual encontrara los archivos que se mostrarán. 
+
+
+
+# Opcional: 
+npx angular-cli-ghpages --branch=BRANCH-NAME --dir=www
+
+##########################################################################
+
+
+REF
+
+https://stackoverflow.com/questions/53036381/how-to-deploy-ionic-4-app-to-github-pages
+
+https://github.com/tschaub/gh-pages/issues/192
+
+
+##########################################################################
+
+POSIBLE ERROR.
+
+An error occurred when trying to deploy:
+Failed to get remote.origin.url (task must either be run in a git repository with a configured origin remote or must be configured with the "repo" option).
+
+
+SOLUCIÓN.
+
+
+#1 Mira las ramas remotas que tienes añadidas
+
+git remote -v
+
+#2 Añade la rama origin como lo mencionan en problema y la url del repositorio.
+
+git remote add origin <url>
+
+##########################################################################
+
