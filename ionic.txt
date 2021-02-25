@@ -49,6 +49,11 @@ npm i cordova-plugin-firebase
 
 npm install @ionic-native/firebase
 
+#2. Sincronizar
+
+ionic cap sync
+
+
 ##########################################################################
 
 GENERAR BUILD Y SUBIRLA A GIT PAGES
