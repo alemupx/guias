@@ -19,6 +19,32 @@ ionic serve
 
 ##########################################################################
 
+INSTALAR ANIMATE.CSS
+
+##########################################################################
+
+
+#1. Instalarlo.
+
+npm install animate.css --save
+
+#2. Añadirlo en el angular.json
+
+    styles": [
+        "node_modules/animate.css/animate.css"
+    ],
+
+#3. Añadirlo en el global.scss
+
+@import "~animate.css/animate.min.css";
+
+#4 Uso
+
+animate__animated animate__bounce
+
+
+##########################################################################
+
 INSTALAR FIRE (Kit desarrollo)
 
 ##########################################################################
