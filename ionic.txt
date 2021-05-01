@@ -197,6 +197,22 @@ ionic build --prod
 firebase deploy
 
 
+##########################################################################
+
+Firestore limit
+
+##########################################################################
+
+
+getUpcomingEvents() {
+    return this.firestore
+      .collection('/events', (ref) => ref.limit(3))
+      .snapshotChanges();
+ }
+
+
+
+REF: https://stackblitz.com/edit/firestore-filter?file=app%2Ffirebase.service.ts
 
 ##########################################################################
 
