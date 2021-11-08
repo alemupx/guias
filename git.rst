@@ -82,9 +82,18 @@ MERGE // FUSIÓN
 
     Una vez posicionado en la rama a la cual se le desea hacer la fusión:
         git merge <NombreDeLaRamaEnLaCualSeVaAFusionarEsta>
+	
+	
+###################
+RESET // RESETEAR
+###################
+
+    Una vez posicionados en la rama que queremos fusionar con el commit seleccionado 
+	git checkout <Commit> . (El punto es necesario!)
+	
 
 ###################
-URLS
+URLS	
 ###################
 
     Obtener ruta url del repositorio
