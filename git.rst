@@ -1,115 +1,178 @@
-#########################################
-GIT
-#########################################
-
-###################
-CONFIGURACIONES USUARIO
-###################
-
-    Configurar nombre 
-        git config --global user.name <usuario>
-	
-    Configurar el usuario
-        git config --global user.user <usuario>
-	
-    Configurar correo electronico
-        git config --global user.email <e-mail>
-	
-    Función para eliminar la propiedad que se le exija. 
-        git config --global --unset-all <user.name>
-
-###################
-CLON // CLONAR
-###################
-    
-    Para traer el repositorio remoto a nivel local
-        git clone <url reporsitorio>
-    
-    
-    Una vez se hallá clonado el repositorio deberiamos descargar todas las dependencias necesarias para poder ejecutar nuestro proyecto
-	npm install
-
-###################
-COMMIT // AÑADIR ARCHIVOS AL REPOSITORIO EN GITHUB
-###################
-
-    Añadir los archivos con los cambios hechos:
-        git add -A // Almacenar todo los cambios hechos.
-
-    Pre publicar los archivos con un comentario detallado de los cambios hechos.  
-        git commit -a -m "<Mensaje>" (IMPORTANTE!!! El mensaje va encerrado entre comillas)
-    
-    Publicar cambios hechos. 
-        git push // Subir los cambios confirmados al repositorio remoto. 
-
-###################
-BRANCHES // RAMAS
-###################
-		
-    ¿Comó saber cuantas ramas tiene el repositorio?
-	git branch --all
-		
-    Manera de crear una rama remota: 
-        git checkout -b <NombreDeLaRama>
-
-    Manera de cambiar entre ramas: 
-    	git checkout <NombreDeLaRama>
-
-Renombrar Rama Remota
-=============
-    
-    
-    Renombrar rama estando parado en ella: 
-	git branch -m <NuevoNombre>
-	
-    Eliminar la rama remota		
-	git push origin --delete <AntigüoNombreRama>
-
-    Publicar rama: 
-        git push --set-upstream origin <NombreRamaLocal>
-
-    
-    
-    
-    
-    Eliminar rama:
-	git branch -D <NombreDeLaRama>
-    	
-    Refrescar luego de haber eliminado la rama (El espacio despues de origin es IMPORTANTISIMO): 
-    	git push origin :<NombreDeLaRama>
-	
+==============
+Configuraciones de Usuario
+==============
 
 
-###################
-FETCH // BUSCAR
-###################
++++++++++++++++++
+Configurar nombre 
++++++++++++++++++
 
-    Comando para buscar las ramas remotas actualizadas:
-        git fetch --all --prune 
+    git config --global user.name <usuario>
 
-###################
-MERGE // FUSIÓN
-###################
++++++++++++++++++
+Configurar el usuario
++++++++++++++++++
+    git config --global user.user <usuario>
 
-    Una vez posicionado en la rama a la cual se le desea hacer la fusión:
-        git merge <NombreDeLaRamaEnLaCualSeVaAFusionarEsta>
-	
-	
-###################
-RESET // RESETEAR
-###################
++++++++++++++++++
+Configurar correo electronico
++++++++++++++++++
+    git config --global user.email <e-mail>
 
-    Una vez posicionados en la rama que queremos fusionar con el commit seleccionado 
-	git checkout <Commit> . (El punto es necesario!)
-	
++++++++++++++++++
+Función para eliminar la propiedad que se le exija. 
++++++++++++++++++
+    git config --global --unset-all <user.name>
 
-###################
-URLS	
-###################
 
-    Obtener ruta url del repositorio
-       git config --get remote.origin.url     
-       
-    Cambiar la ruta url de un repositorio.
-       git remote set-url origin <url>
-       
+
+==============
+Clone
+==============
+
++++++++++++++++++
+Para traer el repositorio remoto a nivel local
++++++++++++++++++
+    git clone <url reporsitorio>
+
++++++++++++++++++
+Una vez se haya clonado el repositorio deberíamos descargar todas las dependencias necesarias para poder ejecutar nuestro proyecto
++++++++++++++++++
+    npm install
+
+
+==============
+Commit
+==============
+
++++++++++++++++++
+Añadir los archivos con los cambios hechos:
++++++++++++++++++
+    git add -A // Almacenar todo los cambios hechos.
+
++++++++++++++++++
+Pre publicar los archivos con un comentario detallado de los cambios hechos.  
++++++++++++++++++
+    git commit -a -m "<Mensaje>" (IMPORTANTE!!! El mensaje va encerrado entre comillas)
+
++++++++++++++++++
+Publicar cambios hechos. 
++++++++++++++++++
+    git push // Subir los cambios confirmados al repositorio remoto.
+
+
+
+==============
+Branches
+==============
+
++++++++++++++++++
+¿Comó saber cuantas ramas tiene el repositorio?
++++++++++++++++++
+    git branch --all
+
++++++++++++++++++
+Manera de crear una rama remota: 
++++++++++++++++++
+    git checkout -b <NombreDeLaRama>
+
++++++++++++++++++
+Manera de cambiar entre ramas: 
++++++++++++++++++
+    git checkout <NombreDeLaRama>
+
+
+
+
+==============
+Renombrar Branch
+==============
+
++++++++++++++++++
+Renombrar rama estando parado en ella: 
++++++++++++++++++
+
+    git branch -m <NuevoNombre>
+
++++++++++++++++++
+Eliminar la rama remota
++++++++++++++++++
+    git push origin --delete <AntigüoNombreRama>
+
+
++++++++++++++++++
+Publicar rama: 
++++++++++++++++++
+    git push --set-upstream origin <NombreRamaLocal>
+
+
+==============
+Delete Branch
+==============
+
++++++++++++++++++
+Eliminar rama:
++++++++++++++++++
+    git branch -D <NombreDeLaRama>
+
++++++++++++++++++
+Refrescar luego de haber eliminado la rama (El espacio despues de origin es IMPORTANTISIMO): 
++++++++++++++++++
+
+    git push origin :<NombreDeLaRama>
+
+
+==============
+Fetch
+==============
+
+
+
++++++++++++++++++
+Comando para buscar las ramas remotas actualizadas:
++++++++++++++++++
+
+    git fetch --all --prune 
+
+==============
+Merge
+==============
+
+
++++++++++++++++++
+Una vez posicionado en la rama a la cual se le desea hacer la fusión:
++++++++++++++++++
+
+    git merge <NombreDeLaRamaEnLaCualSeVaAFusionarEsta>
+
+==============
+Reset
+==============
+
+
++++++++++++++++++
+Una vez posicionados en la rama que queremos fusionar con el commit seleccionado 
++++++++++++++++++
+
+    git checkout <Commit> . (El punto es necesario!)
+
+
+==============
+URL
+==============
+
+
++++++++++++++++++
+Obtener ruta url del repositorio
++++++++++++++++++
+
+    git config --get remote.origin.url 
+
++++++++++++++++++
+Cambiar la ruta url de un repositorio.
++++++++++++++++++
+
+
+    git remote set-url origin <url>
+
+
