@@ -56,19 +56,19 @@ BRANCHES // RAMAS
     	git checkout <NombreDeLaRama>
 	
 	
-    ####################################################
-	
-
-    Publicar rama que no este remotamente: 
-        git push --set-upstream origin <NombreRamaLocal>
-	
+    
+    
     Renombrar rama estando parado en ella: 
-	git branch -m <Nuevo Nombre>
-		
+	git branch -m <NuevoNombre>
+	
     Eliminar la rama remota		
 	git push origin --delete <AntigüoNombreRama>
+
+    Publicar rama: 
+        git push --set-upstream origin <NombreRamaLocal>
+
     
-    ####################################################
+    
     
     
     Eliminar rama:
@@ -76,9 +76,6 @@ BRANCHES // RAMAS
     	
     Refrescar luego de haber eliminado la rama (El espacio despues de origin es IMPORTANTISIMO): 
     	git push origin :<NombreDeLaRama>
-	
-    Pushear nueva rama:
-	git push origin -u nombre-nuevo
 	
 
 
