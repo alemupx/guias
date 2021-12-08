@@ -1,4 +1,13 @@
 ==============
+Git para Dummies
+==============
+
+Pequeña guía escrita para recordar aspectos basicos de como manejar el sistema de versionamiento GIT.
+
+
+
+
+==============
 Configuraciones de Usuario
 ==============
 
