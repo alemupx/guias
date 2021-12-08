@@ -54,6 +54,10 @@ BRANCHES // RAMAS
 
     Manera de cambiar entre ramas: 
     	git checkout <NombreDeLaRama>
+	
+	
+    ####################################################
+	
 
     Publicar rama que no este remotamente: 
         git push --set-upstream origin <NombreRamaLocal>
@@ -63,6 +67,9 @@ BRANCHES // RAMAS
 		
     Eliminar la rama remota		
 	git push origin --delete <AntigüoNombreRama>
+    
+    ####################################################
+    
     
     Eliminar rama:
 	git branch -D <NombreDeLaRama>
