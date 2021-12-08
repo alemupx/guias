@@ -54,8 +54,9 @@ BRANCHES // RAMAS
 
     Manera de cambiar entre ramas: 
     	git checkout <NombreDeLaRama>
-	
-	
+
+Renombrar Rama Remota
+=============
     
     
     Renombrar rama estando parado en ella: 
