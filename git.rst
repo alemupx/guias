@@ -58,15 +58,11 @@ BRANCHES // RAMAS
     Publicar rama que no este remotamente: 
         git push --set-upstream origin <NombreRamaLocal>
 	
-    ###################
-    Renombrar Ramas
-    ###################
-	
-	    Renombrar rama estando parado en ella: 
-		git branch -m <Nuevo Nombre>
+    Renombrar rama estando parado en ella: 
+	git branch -m <Nuevo Nombre>
 		
-	    Eliminar la rama remota		
-		 git push origin --delete <AntigüoNombreRama>
+    Eliminar la rama remota		
+	git push origin --delete <AntigüoNombreRama>
     
     Eliminar rama:
 	git branch -D <NombreDeLaRama>
