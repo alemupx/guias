@@ -11,19 +11,19 @@ Concepto Basico
 
 
 -----------
-ACTIONS
+Acciones - Actions
 -----------
 
 Función que se envian al STORE.
     
 -----------
-STORE
+Almacen - Store
 -----------
 
 Lugar donde se almacena la información
     
 -----------
-REDUCERS
+Trabajadores - Reducer
 -----------
 
 Funciones que hacen peticiones al STORE para entregar resultados al ACTION
