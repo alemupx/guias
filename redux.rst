@@ -10,9 +10,9 @@ Concepto Basico
 ==============
 
 
------------
-ACTIONS
------------
+    -----------
+    ACTIONS
+    -----------
 
 Función que se envian al STORE.
     
@@ -20,11 +20,11 @@ Función que se envian al STORE.
 STORE
 -----------
 
-    Lugar donde se almacena la información
+Lugar donde se almacena la información
     
 -----------
 REDUCERS
 -----------
 
-    Funciones que hacen peticiones al STORE para entregar resultados al ACTION
+Funciones que hacen peticiones al STORE para entregar resultados al ACTION
     
