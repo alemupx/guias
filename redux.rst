@@ -14,7 +14,7 @@ Concepto Basico
 ACTIONS
 -----------
 
-    Función que se envian al STORE.
+Función que se envian al STORE.
     
 -----------
 STORE
@@ -26,5 +26,5 @@ STORE
 REDUCERS
 -----------
 
-    Funciones que hacen peticiones al store para entregar resultados al ACTION
+    Funciones que hacen peticiones al STORE para entregar resultados al ACTION
     
