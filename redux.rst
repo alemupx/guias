@@ -11,7 +11,7 @@ Concepto Basico
 
 
 -----------
-    ACTIONS
+ACTIONS
 -----------
 
 Función que se envian al STORE.
