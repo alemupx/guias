@@ -50,8 +50,36 @@ Para actualizar la versión de Angular de la aplicación ejecutamos los siguient
 
 #E. Revisamos que todo este actualizado
   ng --version
-
   
+  
+  
+==============
+Instalar AOS
+==============
+
+#1. Descargamos la libreria en nuestra aplicacion:
+  npm install aos --save
+  
+  npm install jquery --save
+
+#2. Luego modificamos el archivo angular.json y agregamos las librerias a nuestro proyecto:
+
+"styles": ["node_modules/aos/dist/aos.css"],
+ 
+"scripts": ["node_modules/aos/dist/aos.js","node_modules/jquery/dist/jquery.min.js"]
+
+#3. Luego vamos al archivo app.component y agregamos las siguientes lineas de codigo:
+
+import * as AOS from 'aos';
+
+export class AppComponent {  
+  ngOnInit():void{
+    AOS.init();
+    AOS.refresh();
+  }
+}
+
+ 
   
 ##################################################################################
 Schematichs para generar un componente con modulo y routing
