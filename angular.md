@@ -40,6 +40,16 @@ _Recuerda agregar esta linea en el routing-module de cada pagina_
         component: <NombrePagina>
       }
     ];
+    
+    
+_Y por ultimo agregar la pgina creada al app-routing-module_
+
+    const routes: Routes = [
+    {
+        path: '<NombrePorElCualSeMuestraLaPaginaEnLaURL>',
+        loadChildren: () => import('<RutaDelModuloDeLaPagina>').then(m => m.<NombreDelMoudlo>.module)
+    },
+
    
 Actualizar Proyecto Angular
 -------------
