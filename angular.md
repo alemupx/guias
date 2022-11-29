@@ -30,7 +30,14 @@ Crear elementos de la aplicación con Angular CLI
 
     ng g m pages/<NombrePagina> --routing=true && ng g c pages/<NombrePagina> --type=page -m <NombrePagina>
 
+_Recuerda agregar esta linea en el routing-module de cada pagina_
 
+    const routes: Routes = [
+      {
+        path: '',
+        component: <NombrePagina>
+      }
+    ];
    
 Actualizar Proyecto Angular
 -------------
