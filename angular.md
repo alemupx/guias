@@ -1,17 +1,19 @@
-Angular by Null...
+Angular by Null 👁️
 ==============
 
-Pequeña guía escrita para recordar aspectos básicos de como llevar un proyecto de inicio a fin usando el grandioso framework "Angular". Are you ready?! c:
+Pequeña guía escrita para recordar aspectos básicos de como llevar un proyecto de inicio a fin usando el grandioso framework "Angular". 
+
+Are you ready?! 😈
 
 
-Instalación Angular
+Instalación Angular ⚙️
 -------------
 **#1. Una vez instalado node ejecutamos el comando:**
 
     npm install -g @angular/cli
  
 
-Crear una aplicación con Angular
+Crear una aplicación con Angular 
 -------------
 
 **#1. Ejecutamos el comando:**
