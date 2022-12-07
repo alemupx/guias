@@ -55,6 +55,14 @@ _Y por ultimo agregar la pgina creada al app-routing-module_
    
 Actualizar Proyecto Angular
 --
+
+Sí se necesita pasar de la V.13 a la V.14 consulta este link
+
+    https://update.angular.io/?v=13.0-14.0
+
+
+
+
 Sí se clonó el proyecto y las versiones de angular están des actualizadas, puede que por ejemplo aparezca un error similar a éste:
 
 (This version of CLI is only compatible with Angular versions ^9.0.0-beta || >=9.0.0 <10.0.0, but Angular version 8.2.14 was found instead.)  
@@ -186,27 +194,25 @@ Firebase
 
 Firebase Deploy
 ---
-**1. Ejecutamos Firebase**    
+**1.** Ejecutamos Firebase
     
     
     firebase init
     
     
-**2. Firebase nos preguntará con que funciones deseamos trabajar y nos preguntará acerca de donde deberia buscar los archivos de producción y le dire que en el carpeta dist.**
+**2.** Firebase nos preguntará con que funciones deseamos trabajar y nos preguntará acerca de donde deberia buscar los archivos de producción y le diremos que en la carpeta dist.
 
-**3. Habiendo acabado las configuraciones y validaciones nos habrá creado una carpeta dist y en ella un archivo que por default el cual deberemos eliminar para alojar la versión de produción.**
+**3.** Habiendo acabado las configuraciones y validaciones nos habrá creado una carpeta dist y en ella un archivo prederterminado el cual deberemos eliminar para alojar la versión de produción.
   
-**4. Ejecutamos el creador de versiones de producción con el siguiente comando:**
-  
-  
+**4.** Generamos una aplicación en modo de producción:
+
     ng build --prod
 
 Luego ejecutamos el siguiente comando:
 
     ng build --prod --build-optimizer
   
-  
-**5. Subimos el versión de producción generada.**
+**5.** Subimos la versión de producción generada.
   
     firebase deploy
  
