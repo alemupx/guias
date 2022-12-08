@@ -206,7 +206,7 @@ Firebase Deploy
   
 **4.** Generamos una aplicación en modo de producción:
 
-    ng build --build-optimizer	
+    ng b --build-optimizer
   
 **5.** Subimos la versión de producción generada.
   
