@@ -138,11 +138,12 @@ Firebase
 
 **1. Primero instalamos todos los archivos de firebase necesarios en la aplicación.**
 
-    npm install firebase @angular/fire
+    npm install -g firebase-tools
     
 Luego:
+
+    npm install firebase @angular/fire
  
-    npm install -g firebase-tools
 
 
 **2. Incluir en la variable de entorno las configuraciones de firabase. (src/enviroments/enviroment.ts)**
