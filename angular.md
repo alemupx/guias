@@ -135,6 +135,10 @@ Luego en los scripts:
 Firebase
 --
 
+**IMPORTANTE
+
+    https://www.youtube.com/watch?v=TVwa2x-jz-Y
+
 
 **1. Primero instalamos todos los archivos de firebase necesarios en la aplicación.**
 
