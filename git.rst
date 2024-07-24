@@ -178,10 +178,24 @@ Obtener ruta url del repositorio
     git config --get remote.origin.url 
 
 -----------
-Cambiar la ruta url de un repositorio.
+Cambiar la ruta URL de un repositorio.
 -----------
 
+#1. Eliminamos el origin con el URL antigüo
 
-    git remote set-url origin <url>
+    git remote remove origin
+
+#2. Creamos la nueva rama con la URL actualizada
+
+    git remote add origin <url>
+
+#3. Aseguramos que el nombre de la rama sea main
+    git branch -M main
+
+#4. Asociamos los "push" futuros a la rama origin main
+    git push -u origin main
+
+
+
 
 
