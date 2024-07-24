@@ -190,9 +190,11 @@ Cambiar la ruta URL de un repositorio.
     git remote add origin <url>
 
 #3. Aseguramos que el nombre de la rama sea main
+
     git branch -M main
 
 #4. Asociamos los "push" futuros a la rama origin main
+
     git push -u origin main
 
 
